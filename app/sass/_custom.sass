@@ -103,7 +103,7 @@
       .content-wrapper
          display: grid
          grid-column: 2 / 3
-         grid-template-columns: minmax(200px, 3fr) minmax(300px, 9fr)
+         grid-template-columns: minmax(200px, 4fr) minmax(300px, 8fr)
          align-items: center
          border-radius: 6px
          background-color: #fff
@@ -305,6 +305,29 @@
          &:hover
             i
                color: $accent
+
+
+// ===================== Cookie =====================
+
+.bottom__cookie-block
+   width: 100%
+   height: min-content
+   background-color: rgba(235, 235, 235, .9)
+   color: $black
+   display: none
+   position: fixed
+   bottom: 0
+   padding: 10px 20px
+   z-index: 100000
+   text-align: center
+   -webkit-transform: translateZ(0)
+   p
+      display: inline-block
+   .ok
+      padding: 8px 16px
+      margin: 0 20px
+      color: #fff
+      background-color: $accent
 
 
 // ===================== Footer =====================

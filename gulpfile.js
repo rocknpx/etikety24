@@ -45,6 +45,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/autosize.js',
 		'app/libs/modernizr/modernizr.js',
+		'app/libs/cookie/jquery.cookie.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

@@ -109,7 +109,7 @@ $('.close-btn').click(function() {
 });
 
 
-//autosize
+//Аutosize
 autosize($('textarea'));
 
 

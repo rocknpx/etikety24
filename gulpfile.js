@@ -46,6 +46,7 @@ gulp.task('js', function() {
 		'app/libs/autosize.js',
 		'app/libs/modernizr/modernizr.js',
 		'app/libs/cookie/jquery.cookie.js',
+		'app/libs/JiSlider/JiSlider.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -112,7 +113,7 @@ gulp.task('code', function() {
 gulp.task('watch', function() {
 	gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'));
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('js'));
-	gulp.watch('app/*.html', gulp.parallel('code'));
+	gulp.watch('app/**/*.html', gulp.parallel('code'));
 });
 
 gulp.task('default', gulp.parallel('sass', 'js', 'browser-sync', 'watch'));

@@ -4,11 +4,27 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1280px)
-	/**/
+	.navbar
+		.nav-container
+			.nav-nav
+				.block-menu-wrapper
+					grid-column-gap: 2px
+					li
+						a
+							font-size: 14px
+
+	.main-page
+		text-align: center
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.navbar
+		.nav-container
+			.nav-nav
+				.block-menu-wrapper
+					li
+						a
+							font-size: 12px
 
 
 /* Small Devices, Tablets */
@@ -16,24 +32,24 @@
 	.navbar
 		grid-template-columns: minmax(20px, auto) minmax(200px, 1200px) minmax(20px, auto)
 		.nav-container
-			.nav-mail
+			.nav-nav
 				display: none
 			.nav-lang
 				grid-column: 2 / 4
 
-
-	#cd-vertical-nav
-		display: none
+	.jislider
+		li
+			h1, h2
+				font-size: 40px
 
 
 	.item
 		grid-template-columns: minmax(20px, auto) minmax(200px, 1200px) minmax(20px, auto)
 		height: auto
 		.main-zag-block
-			padding: 20px
+			padding: 0
 			grid-column: 1 / 3
 			background-image: none
-			background-color: rgba(0, 0, 0, .05)
 			&::before
 				display: none
 		.form-style
@@ -86,6 +102,11 @@
 		.cover-adv-block
 			grid-template-columns: repeat(auto-fill, minmax(240px, 1fr))
 
+	.jislider
+		li
+			h1, h2
+				font-size: 28px
+
 
 
 /* Extra Small Devices, Phones */
@@ -100,9 +121,18 @@
 			.nav-logo
 				width: 140px
 
+	.jislider
+		li
+			h1, h2
+				font-size: 20px
+
+	.jislider__right-arrow
+		right: 10px
+	.jislider__left-arrow
+		left: 10px
+
 	.item
 		grid-template-columns: 10px minmax(200px, 1200px) 10px
-		grid-template-rows: 70px minmax(auto, auto) 10px
 		.grid-col-container
 			/**/
 	.main-zag-block
